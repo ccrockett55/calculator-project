@@ -1,1 +1,50 @@
 /* fill in styling here */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.container {
+    padding: 10px 10px;
+    display: block;
+    border: 1px solid rgb(214, 212, 212);
+    border-radius: 5px;
+}
+
+.container:hover {
+    box-shadow: 1px 2px 2px 4px rgb(221, 221, 221) ;
+}
+
+.numbers {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    margin: 5px 10px 5px 10px;
+}
+
+.inputs {
+    display: grid;
+    text-align: center;
+    padding: 10px 10px;
+}
+
+.operations, .buttons {
+    text-align: center;
+    padding: 10px 10px;
+}
+
+button {
+    margin-right: 10px;
+    margin-left: 10px;
+}

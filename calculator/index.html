@@ -8,5 +8,36 @@
     </head>
     <body>
         <!-- Fill in html here -->
+        <div class="container">
+            <h2>Calculator</h2>
+
+            <div class="numbers">
+                <div class="inputs">
+                    <label for="firstNumber">First Number</label>
+                <input type="text" name="" id="inputNumberOne">
+                </div>
+                <div class="inputs">
+                    <label for="secondNumber">Second Number</label>
+                <input type="text" name="" id="inputNumberTwo">
+                </div>
+                
+            </div>
+            
+            <div class="operations">
+                <input type="radio" name="operation" value="add" id="add">Add 
+                <input type="radio" name="operation" value="subtract" id="subtract">Subtract
+                <input type="radio" name="operation" value="division" id="division">Division
+                <input type="radio" name="operation" value="multiply" id="multiply">Multiply
+            </div>
+
+            <div class="buttons">
+                <button type="button" class="btn btn-dark" id="result" onclick="calculate()">=</button>
+                <button type="button" class="btn btn-light" id="clearButton" onclick="clearValues()">Clear</button>
+            </div>
+
+            <h2 id="resultText"></h2>
+            
+        </div>
+        
     </body>
 </html>
