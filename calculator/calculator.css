@@ -1,50 +1,55 @@
 /* fill in styling here */
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
 
-h2 {
+#center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    
 }
 
-.container {
-    padding: 10px 10px;
-    display: block;
-    border: 1px solid rgb(214, 212, 212);
-    border-radius: 5px;
+.operate {
+    background-color: #116530;
+    color: white;
 }
 
-.container:hover {
-    box-shadow: 1px 2px 2px 4px rgb(221, 221, 221) ;
+.clear{
+    background: grey;
+    color: white;
 }
 
-.numbers {
-    display: flex;
-    justify-content: center;
+#lbl2{
+    margin-left: 5px;
 }
 
-input {
-    margin: 5px 10px 5px 10px;
+#lblResult{
+    font-size: large;
 }
 
-.inputs {
-    display: grid;
-    text-align: center;
-    padding: 10px 10px;
+button{
+    min-width: 50px;
+    border-radius: 15%;
 }
 
-.operations, .buttons {
-    text-align: center;
-    padding: 10px 10px;
+.buttons{
+    padding: 5px
 }
 
-button {
-    margin-right: 10px;
-    margin-left: 10px;
+.numbers{
+    max-width: 100px;
+    min-height: 20px;
+    border: 1px solid black
+}
+
+.section{
+    padding: 5px;
+}
+
+.operators:checked+label{
+    font-weight: bold;
+}
+
+.answ-text {
+    font-size: 26px;
 }

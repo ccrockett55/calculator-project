@@ -8,36 +8,33 @@
     </head>
     <body>
         <!-- Fill in html here -->
-        <div class="container">
-            <h2>Calculator</h2>
-
-            <div class="numbers">
-                <div class="inputs">
-                    <label for="firstNumber">First Number</label>
-                <input type="text" name="" id="inputNumberOne">
-                </div>
-                <div class="inputs">
-                    <label for="secondNumber">Second Number</label>
-                <input type="text" name="" id="inputNumberTwo">
-                </div>
+        <div id="center">
+            <div class="section">
+                <label id="lbl1" for="inputNumberOne">First Number: </label>
+                <input id="inputNumberOne" type="number" autofocus class="numbers"/>
+                <label id="lbl2" for="inputNumberTwo">Second Number: </label>
+                <input id="inputNumberTwo" type="number" class="numbers"/>
+            </div>
+            <div class="operators">
                 
+                <input id="add" type="radio" name="operation" value="add" class="operators"/>
+                <label for="add">Add</label>   
+                <input id="subtract" type="radio" name="operation" value="subtract" class="operators"/>
+                <label for="subtract">Subtract</label>                    
+                <input id="multiply" type="radio" name="operation" value="multiply" class="operators"/>
+                <label for="multiply">Multiply</label>                   
+                <input id="divide" type="radio" name="operation" value="divide" class="operators"/>
+                <label for="divide">Divide</label>
             </div>
-            
-            <div class="operations">
-                <input type="radio" name="operation" value="add" id="add">Add 
-                <input type="radio" name="operation" value="subtract" id="subtract">Subtract
-                <input type="radio" name="operation" value="division" id="division">Division
-                <input type="radio" name="operation" value="multiply" id="multiply">Multiply
-            </div>
-
             <div class="buttons">
-                <button type="button" class="btn btn-dark" id="result" onclick="calculate()">=</button>
-                <button type="button" class="btn btn-light" id="clearButton" onclick="clearValues()">Clear</button>
+                <button id="btnCalculate" onclick="calculate()" class="operate">=</button>
+                <button id="btnClear" onclick="clearValues()" class="clear">Clear</button>
             </div>
-
-            <h2 id="resultText"></h2>
-            
-        </div>
+        </br>
+            <div class="section">
+            <label class="answ-text" id="result"></label>
+            </div>
+        </div>          
         
     </body>
 </html>
